@@ -8,7 +8,7 @@ on:
 env:
   # Variables subject to change depending on target
   tenantId: eab91f23-3244-40aa-8e73-a1e0e1e22949
-  factoryDirectory1: ./
+  factoryDirectory1: /
   artifactName: adf_armtemplate
   armParameterFile: ARMTemplateParametersForFactory.json
   sourceFactoryName1: adfdemo1010
@@ -30,7 +30,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '10.x'
+          node-version: '14.x'
       # Install npm packages saved in package.json file in the build
       - name: Install npm package
         run: npm install
