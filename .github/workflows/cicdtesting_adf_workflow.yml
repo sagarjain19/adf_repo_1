@@ -8,7 +8,7 @@ on:
 env:
   # Variables subject to change depending on target
   tenantId: eab91f23-3244-40aa-8e73-a1e0e1e22949
-  factoryDirectory1: /
+  factoryDirectory1: $GITHUB_WORKSPACE/
   artifactName: adf_armtemplate
   armParameterFile: ARMTemplateParametersForFactory.json
   sourceFactoryName1: adfdemo1010
