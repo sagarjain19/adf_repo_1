@@ -14,7 +14,7 @@ env:
   sourceFactoryName1: adfdemo1010
   sourceSubscriptionId: 24e4b4be-7875-429e-9548-fdc3241c1683
   sourceResourceGroupName: rgdemo101
-  targetFactoryName1: adfdemo1010
+  targetFactoryName1: adfdemo2020
   targetSubscriptionId: 24e4b4be-7875-429e-9548-fdc3241c1683
   targetResourceGroupName: rgdemo101
 jobs:
@@ -102,7 +102,7 @@ jobs:
               -ResourceGroupName ${{ env.targetResourceGroupName }} `
               -TemplateFile ${{ env.artifactName }}/ARMTemplateForFactory.json `
               -TemplateParameterFile ${{ env.artifactName }}/${{ env.armParameterFile }} `
-              -factoryName adfdemo1010 `
+              -factoryName adfdemo2020 `
               -Verbose
           azPSVersion: latest
       # Execute Adf Post-Deployment Script
