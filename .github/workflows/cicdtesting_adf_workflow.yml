@@ -2,7 +2,7 @@ name: cicdtesting_adf_workflow
 on: 
   push:
     branches:
-      - cicdtesting
+      - main
   workflow_dispatch:
 
 env:
